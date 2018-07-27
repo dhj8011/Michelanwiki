@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scitmaster.michelanwiki.MainActivity">
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#661a00"
+    >
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="#ffffff"
+        android:id="@+id/searchBar"
+        />
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="45dp"
+        android:id="@+id/search"
+        android:text="검색"
+        android:onClick="searchInfo"
+        android:layout_alignRight="@id/searchBar"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="본 위키는 여러분의 지식과 자료들로 이루어집니다"
+        android:id="@+id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인하셔서 더욱 많은 정보를 편집하세요"
+        android:id="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:textColor="#ffffff"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:id="@+id/loginBtn"
+        android:onClick="loginPage"
+        android:layout_below="@id/searchBar"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

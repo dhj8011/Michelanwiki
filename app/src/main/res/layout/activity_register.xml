@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.scitmaster.michelanwiki.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#661a00">
+
+        <EditText
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="250px"
+            android:layout_marginLeft="50px"
+            android:hint="아이디"
+            android:textColorHint="#ffffff"
+            android:id="@+id/idText"/>
+        <EditText
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idText"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:hint="비밀번호"
+            android:textColorHint="#ffffff"
+            android:id="@+id/pwText"/>
+        <EditText
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwText"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:hint="비밀번호 확인"
+            android:textColorHint="#ffffff"
+            android:id="@+id/pwCheck"
+            />
+        <EditText
+            android:layout_width="660px"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pwCheck"
+            android:layout_marginTop="10px"
+            android:layout_marginLeft="50px"
+            android:hint="닉네임"
+            android:textColorHint="#ffffff"
+            android:id="@+id/nickName"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickName"
+            android:layout_marginTop="25px"
+            android:text="등록"
+            android:id="@+id/regBtn"
+            android:onClick="mainPage"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="취소"
+            android:id="@+id/cancelBtn"
+            android:layout_below="@id/regBtn"
+            />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
